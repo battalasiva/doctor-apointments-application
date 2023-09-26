@@ -10,7 +10,7 @@
   min-height: 100%;
   width: 300px;
   border-radius: 5px;
-  background-color: rgb(2, 53, 3);
+  background-color: rgb(44, 118, 46);
   box-shadow: 0 0 2px gray;
   margin-right: 20px;
   color: white;
@@ -25,7 +25,8 @@
   height: 10vh;
   margin-bottom: 20px;
   box-shadow: 0 0 2px gray;
-  background-color: white;
+  background-color: rgb(44, 118, 46);
+  border-radius: 5px;
 }
 .header-heading{
   display: none;
@@ -80,9 +81,24 @@
 .header-content a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: blue;
+  color: rgb(236, 236, 243);
   margin: 0 10px;
   text-transform: uppercase;
+}
+.body{
+  overflow-x: scroll;
+  -ms-overflow-style:none;
+  scrollbar-width: none;
+}
+.body::-webkit-scrollbar{
+  display: none;
+}
+.text-light a{
+  text-decoration: none;
+  color: white;
+}
+.notification-badge{
+  color: white;
 }
 @media screen and (max-width:600px) {
   .layout{
@@ -91,12 +107,19 @@
   .logo{
     display: none;
   }
+  .user-name{
+    width: 100px;
+    overflow: hidden;
+    height: 6vh;
+  }
   .sidebar{
     width: 100%;
+    position: sticky;
   }
   .header-heading{
     display: block;
     align-items: center;
+    margin-top: 4%;
   }
   .menu{
     width: 100%;
@@ -109,14 +132,7 @@
   .menuname{
     display: none;
   }
-  .body{
-    overflow-x: scroll;
-    -ms-overflow-style:none;
-    scrollbar-width: none;
-  }
-  .body::-webkit-scrollbar{
-    display: none;
-  }
+  
   .menu-item{
     margin-top: 5px;
   }
@@ -128,6 +144,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
+    border-radius: 5px;
+    position: sticky;
+    background-color: rgb(44, 118, 46);
   }
   .ant-row{
     justify-content: center;

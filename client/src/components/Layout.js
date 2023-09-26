@@ -96,7 +96,7 @@ const Layout = ({ children }) => {
         <div className="layout">
           <div className="sidebar">
             <div className="logo">
-              <h6 className="text-light">DOC APP</h6>
+              <h6 className="text-light"><Link to="/"><i className="fa-solid fa-user-doctor" /> Doctor_App</Link></h6>
               <hr />
             </div>
             <div className="menu">
@@ -130,6 +130,7 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="header-content" style={{ cursor: "pointer" }}>
                   <Badge
+                  className="notification-badge"
                     count={user && user.notifcation.length}
                     onClick={() => {
                       navigate("/notification");
@@ -138,7 +139,7 @@ const Layout = ({ children }) => {
                     <i class="fa-solid fa-bell"></i>
                   </Badge>
 
-                  <Link to="/profile">{user?.name}</Link>
+                  <Link className="user-name" to="/profile">{user?.name}</Link>
                 </div>
               </div>
             
