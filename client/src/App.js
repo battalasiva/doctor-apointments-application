@@ -56,6 +56,22 @@ function App() {
               }
             />
             <Route
+              path="/user/profile/:id"
+              element={
+                <ProtectedRoute>
+                  <Profile />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin/profile/:id"
+              element={
+                <ProtectedRoute>
+                  <Profile />
+                </ProtectedRoute>
+              }
+            />
+            <Route
               path="/doctor/book-appointment/:doctorId"
               element={
                 <ProtectedRoute>

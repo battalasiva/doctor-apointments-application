@@ -3,9 +3,21 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-image: url("https://plus.unsplash.com/premium_photo-1661371936899-2517f6230afd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG9zcGl0YWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .register-form {
   border: 1px solid gray;
+  border-radius: 50px 0 50px 0;
   padding: 30px;
+  background-color: rgb(190, 198, 198);
+  box-shadow: 0 0 25px rgb(120, 182, 245);
+}
+.login-bg{
+  background-image: url("https://plus.unsplash.com/premium_photo-1661371936899-2517f6230afd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aG9zcGl0YWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
